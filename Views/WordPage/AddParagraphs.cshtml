@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "AddParagraphs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Styled Paragraph to Word Document</h2>
+
+<form asp-controller="WordPage" asp-action="AddParagraphs" method="post" enctype="multipart/form-data">
+    <div>
+        <label>Upload a Word (.docx) file:</label>
+        <input type="file" name="uploadedFile" required />
+    </div>
+    <button type="submit">Add Paragraph & Download</button>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color: green;">@ViewBag.Message</p>
+}

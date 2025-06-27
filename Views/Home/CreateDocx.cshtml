@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "CreateDocx";
+}
+
+<h2>Create DOCX from Text</h2>
+
+<form asp-action="CreateDocx" method="post">
+    <div>
+        <label>Enter Text:</label><br />
+        <textarea name="docText" rows="10" cols="80" required></textarea>
+    </div>
+    <br />
+    <button type="submit">Generate DOCX</button>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:green;">@ViewBag.Message</p>
+}

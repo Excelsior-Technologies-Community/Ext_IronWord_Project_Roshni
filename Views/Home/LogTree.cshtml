@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "LogTree";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Log Word Document Object Tree</h2>
+
+<form asp-controller="Home" asp-action="LogTree" method="post" enctype="multipart/form-data">
+    <div>
+        <label>Select .docx file:</label>
+        <input type="file" name="uploadedFile" required />
+    </div>
+    <button type="submit">Log Object Tree</button>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:red">@ViewBag.Message</p>
+}
+
+@if (ViewBag.ObjectTree != null)
+{
+    <h3>Object Tree Output:</h3>
+    <pre style="background-color:#f4f4f4; padding:10px; border:1px solid #ccc;">
+        @ViewBag.ObjectTree
+        </pre>
+}

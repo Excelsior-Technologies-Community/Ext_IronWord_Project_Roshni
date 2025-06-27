@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Company Work\\Ext_IronWord_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|f:\\company work\\ext_ironword_project\\controllers\\wordpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|solutionrelative:controllers\\wordpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|f:\\company work\\ext_ironword_project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|f:\\company work\\ext_ironword_project\\views\\wordpage\\addlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|solutionrelative:views\\wordpage\\addlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|f:\\company work\\ext_ironword_project\\views\\wordpage\\addimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|solutionrelative:views\\wordpage\\addimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|f:\\company work\\ext_ironword_project\\views\\wordpage\\addparagraphs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|solutionrelative:views\\wordpage\\addparagraphs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|f:\\company work\\ext_ironword_project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|f:\\company work\\ext_ironword_project\\views\\home\\logtree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|solutionrelative:views\\home\\logtree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|f:\\company work\\ext_ironword_project\\views\\home\\editdocx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|solutionrelative:views\\home\\editdocx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|f:\\company work\\ext_ironword_project\\views\\home\\createdocx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|solutionrelative:views\\home\\createdocx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|f:\\company work\\ext_ironword_project\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FBC92B8-166D-4E57-80E6-C229B688446D}|Ext_IronWord_Project.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddList.cshtml",
+              "DocumentMoniker": "F:\\Company Work\\Ext_IronWord_Project\\Views\\WordPage\\AddList.cshtml",
+              "RelativeDocumentMoniker": "Views\\WordPage\\AddList.cshtml",
+              "ToolTip": "F:\\Company Work\\Ext_IronWord_Project\\Views\\WordPage\\AddList.cshtml",
+              "RelativeToolTip": "Views\\WordPage\\AddList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T11:54:06.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddImage.cshtml",
+              "DocumentMoniker": "F:\\Company Work\\Ext_IronWord_Project\\Views\\WordPage\\AddImage.cshtml",
+              "RelativeDocumentMoniker": "Views\\WordPage\\AddImage.cshtml",
+              "ToolTip": "F:\\Company Work\\Ext_IronWord_Project\\Views\\WordPage\\AddImage.cshtml",
+              "RelativeToolTip": "Views\\WordPage\\AddImage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T11:14:02.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WordPageController.cs",
+              "DocumentMoniker": "F:\\Company Work\\Ext_IronWord_Project\\Controllers\\WordPageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WordPageController.cs",
+              "ToolTip": "F:\\Company Work\\Ext_IronWord_Project\\Controllers\\WordPageController.cs",
+              "RelativeToolTip": "Controllers\\WordPageController.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAAwJIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T10:32:43.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddParagraphs.cshtml",
+              "DocumentMoniker": "F:\\Company Work\\Ext_IronWord_Project\\Views\\WordPage\\AddParagraphs.cshtml",
+              "RelativeDocumentMoniker": "Views\\WordPage\\AddParagraphs.cshtml",
+              "ToolTip": "F:\\Company Work\\Ext_IronWord_Project\\Views\\WordPage\\AddParagraphs.cshtml",
+              "RelativeToolTip": "Views\\WordPage\\AddParagraphs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T10:30:32.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LogTree.cshtml",
+              "DocumentMoniker": "F:\\Company Work\\Ext_IronWord_Project\\Views\\Home\\LogTree.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\LogTree.cshtml",
+              "ToolTip": "F:\\Company Work\\Ext_IronWord_Project\\Views\\Home\\LogTree.cshtml",
+              "RelativeToolTip": "Views\\Home\\LogTree.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T09:37:47.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditDocx.cshtml",
+              "DocumentMoniker": "F:\\Company Work\\Ext_IronWord_Project\\Views\\Home\\EditDocx.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\EditDocx.cshtml",
+              "ToolTip": "F:\\Company Work\\Ext_IronWord_Project\\Views\\Home\\EditDocx.cshtml",
+              "RelativeToolTip": "Views\\Home\\EditDocx.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T05:53:57.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\Company Work\\Ext_IronWord_Project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\Company Work\\Ext_IronWord_Project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T05:34:07.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateDocx.cshtml",
+              "DocumentMoniker": "F:\\Company Work\\Ext_IronWord_Project\\Views\\Home\\CreateDocx.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\CreateDocx.cshtml",
+              "ToolTip": "F:\\Company Work\\Ext_IronWord_Project\\Views\\Home\\CreateDocx.cshtml",
+              "RelativeToolTip": "Views\\Home\\CreateDocx.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T05:27:34.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\Company Work\\Ext_IronWord_Project\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "F:\\Company Work\\Ext_IronWord_Project\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T04:52:06.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Company Work\\Ext_IronWord_Project\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\Company Work\\Ext_IronWord_Project\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T04:51:41.119Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

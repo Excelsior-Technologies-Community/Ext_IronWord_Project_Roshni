@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "AddList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create Word Document with List</h2>
+
+<form asp-controller="WordPage" asp-action="AddList" method="post">
+    <div id="listItemsContainer">
+        <label>List Item 1:</label>
+        <input type="text" name="ListItems" required />
+    </div>
+
+    <button type="button" onclick="addListItem()">Add Another Item</button>
+    <br /><br />
+    <button type="submit">Generate Word Document</button>
+</form>
+
+<script>
+    let count = 2;
+    function addListItem() {
+        const container = document.getElementById("listItemsContainer");
+        const label = document.createElement("label");
+        label.innerText = `List Item ${count}:`;
+        const input = document.createElement("input");
+        input.type = "text";
+        input.name = "ListItems";
+        input.required = true;
+        container.appendChild(document.createElement("br"));
+        container.appendChild(label);
+        container.appendChild(input);
+        count++;
+    }
+</script>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color: green">@ViewBag.Message</p>
+}

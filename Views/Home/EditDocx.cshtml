@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "EditDocx";
+}
+
+<h2>Edit Word Document Text</h2>
+
+<form asp-controller="Home" asp-action="EditDocx" method="post" enctype="multipart/form-data">
+    <div>
+        <label>Select .docx file:</label>
+        <input type="file" name="uploadedFile" required />
+    </div>
+    <div>
+        <label>Old Text to Replace:</label>
+        <input type="text" name="oldText" required />
+    </div>
+    <div>
+        <label>New Text:</label>
+        <input type="text" name="newText" required />
+    </div>
+    <button type="submit">Edit Document</button>
+</form>
+
+@if (ViewBag.DownloadLink != null)
+{
+    <div>
+        <p>Document edited successfully.</p>
+        <a href="@ViewBag.DownloadLink" download>Download Edited Document</a>
+    </div>
+}
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:red">@ViewBag.Message</p>
+}
