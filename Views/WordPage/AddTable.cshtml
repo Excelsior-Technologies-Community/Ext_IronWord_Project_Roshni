@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "AddTable";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Generate Word Document with Table</h2>
+
+<form method="post" asp-controller="WordPage" asp-action="GenerateTableDoc">
+    <button type="submit" class="btn btn-primary">Download Word Document</button>
+</form>

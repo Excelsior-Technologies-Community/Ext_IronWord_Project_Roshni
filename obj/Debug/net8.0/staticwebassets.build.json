@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5MujtUFlRAyhooHD/2GHOZlKcDOZ664DFDQ9mHGW5N4=",
+  "Hash": "hb7TCZnfoWSB36RPsIA/g3Lseh60bOgjiP0lqZvJT4U=",
   "Source": "Ext_IronWord_Project",
   "BasePath": "_content/Ext_IronWord_Project",
   "Mode": "Default",
@@ -1440,6 +1440,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\temp\\TeamMembers.pdf"
+    },
+    {
+      "Identity": "F:\\Company Work\\Ext_IronWord_Project\\wwwroot\\temp\\WordList_20250627_180230.docx",
+      "SourceId": "Ext_IronWord_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Company Work\\Ext_IronWord_Project\\wwwroot\\",
+      "BasePath": "_content/Ext_IronWord_Project",
+      "RelativePath": "temp/WordList_20250627_180230.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\temp\\WordList_20250627_180230.docx"
     }
   ]
 }

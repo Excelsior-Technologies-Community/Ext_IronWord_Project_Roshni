@@ -26,6 +26,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\Company Work\Ext_IronWord_Project
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/Company Work/Ext_IronWord_Project/Views/Document/AddGlowEffect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcQWRkR2xvd0VmZmVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Company Work/Ext_IronWord_Project/Views/Document/AddReflection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcQWRkUmVmbGVjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Company Work/Ext_IronWord_Project/Views/Document/AddShadowEffect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcQWRkU2hhZG93RWZmZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Company Work/Ext_IronWord_Project/Views/Document/AddTextOutline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcQWRkVGV4dE91dGxpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Company Work/Ext_IronWord_Project/Views/Document/AddTextStyle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcQWRkVGV4dFN0eWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Company Work/Ext_IronWord_Project/Views/Home/CreateDocx.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVEb2N4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -64,6 +84,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/Company Work/Ext_IronWord_Project/Views/WordPage/AddParagraphs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29yZFBhZ2VcQWRkUGFyYWdyYXBocy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Company Work/Ext_IronWord_Project/Views/WordPage/AddTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29yZFBhZ2VcQWRkVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Company Work/Ext_IronWord_Project/Views/_ViewImports.cshtml]

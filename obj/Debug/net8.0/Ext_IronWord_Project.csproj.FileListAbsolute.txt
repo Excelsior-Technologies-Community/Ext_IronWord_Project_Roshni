@@ -243,10 +243,10 @@ F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\SkiaSharp.dll
 F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\System.IO.Packaging.dll
 F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\Xceed.Document.NET.dll
 F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\Xceed.Drawing.NET.dll
-F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\Xceed.PDF.NET.dll
 F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\Xceed.Words.NET.dll
 F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
 F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
 F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
 F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll
 F:\Company Work\Ext_IronWord_Project\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+F:\Company Work\Ext_IronWord_Project\obj\Debug\net8.0\Ext_IronWord_Project.sourcelink.json

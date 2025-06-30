@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "AddShadowEffect";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Shadow Effect to Text</h2>
+
+<form asp-action="GenerateShadowDoc" method="post">
+    <div class="form-group">
+        <label for="inputText">Enter Text:</label>
+        <textarea  class="form-control" name="inputText" id="inputText" required >
+          </textarea> 
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Generate Word Document</button>
+</form>

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "AddTextOutline";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Text Outline to Word Document</h2>
+
+<form asp-action="GenerateTextOutlineDoc" method="post">
+    <div class="form-group">
+        <label for="inputText">Enter Text:</label>
+        <textarea type="text" class="form-control" id="inputText" name="inputText" required >
+            </textarea>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-success">Generate Word File</button>
+</form>

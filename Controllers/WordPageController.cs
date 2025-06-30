@@ -174,5 +174,59 @@ namespace Ext_IronWord_Project.Controllers
             byte[] fileBytes = System.IO.File.ReadAllBytes(outputPath);
             return File(fileBytes, "application/vnd.openxmlformats-officedocument.wordprocessingml.document", fileName);
         }
+
+        public IActionResult AddTable()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult GenerateTableDoc()
+        {
+            IronWord.License.LicenseKey = "IRONSUITE.EXCELSIORTECHNOLOGIES.8187-3708CDF60F-B3MFZGNEBBLCW6W5-BXTNM4MPHNMU-OTOEBFCLRDSW-ETTEAFOQHJNT-KBYQIADCMQPR-QVRLMSV47S2Q-GLWMCW-TRH25WCBAZKQUA-SANDBOX-BDIXLR.TRIAL.EXPIRES.27.MAR.2026";
+
+            try
+            {
+                // Create table
+                Table table = new Table(5, 3);
+                table.Zebra = new ZebraColor("FFFFFF", "DDDDDD");
+
+                table[0, 0] = new TableCell(new TextContent("Number"));
+                table[0, 1] = new TableCell(new TextContent("First Name"));
+                table[0, 2] = new TableCell(new TextContent("Last Name"));
+
+                for (int i = 1; i < table.Rows.Count; i++)
+                {
+                    table[i, 0] = new TableCell(new TextContent(i.ToString()));
+                    table[i, 1] = new TableCell(new TextContent($"FirstName{i}"));
+                    table[i, 2] = new TableCell(new TextContent($"LastName{i}"));
+                }
+
+                // Generate document
+                WordDocument doc = new WordDocument(table);
+
+                // Save path
+                string tempPath = Path.Combine(Path.GetTempPath(), "TableDoc.docx");
+                doc.SaveAs(tempPath);
+
+                // Ensure file exists before returning
+                if (!System.IO.File.Exists(tempPath))
+                {
+                    return Content("Error: Word document was not created.");
+                }
+
+                byte[] fileBytes = System.IO.File.ReadAllBytes(tempPath);
+                System.IO.File.Delete(tempPath);
+
+                return File(fileBytes,
+                    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "TableDocument.docx");
+            }
+            catch (Exception ex)
+            {
+                return Content($"Error occurred: {ex.Message}<br><br>{ex.StackTrace}", "text/html");
+            }
+        }
+
     }
+    
 }
