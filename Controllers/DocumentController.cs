@@ -1,10 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Ext_IronWord_Project.Models;
 using System.IO;
 using System.Drawing;
 using Xceed.Words.NET;
-using Xceed.Document.NET; 
+using Xceed.Document.NET;
+using Xceed.Drawing;
 using IronWord;
 using IronWord.Models;
+using DrawingColor = System.Drawing.Color;
+using DrawingColorTranslator = System.Drawing.ColorTranslator;
+using XceedColor = Xceed.Drawing.Color;
+using IronColor = IronWord.Models.Color;
+using ExtGradient = Ext_IronWord_Project.Models.Gradient;
+using SixLabors.Fonts;
+using System.Collections.Generic; 
+using WordColor = IronWord.Models.Color;
+using IronGradient = IronWord.Models.Gradient;
+using SkiaSharp;
+
 
 namespace Ext_IronWord_Project.Controllers
 {
@@ -192,12 +205,11 @@ namespace Ext_IronWord_Project.Controllers
                 return Content($"<b>Error:</b> {ex.Message}<br><br>{ex.StackTrace}", "text/html");
             }
         }
-
+        [HttpGet]
         public IActionResult AddReflection()
         {
             return View();
         }
-
         [HttpPost]
         public IActionResult GenerateReflectionWord(string userText)
         {
@@ -206,31 +218,94 @@ namespace Ext_IronWord_Project.Controllers
             if (string.IsNullOrWhiteSpace(userText))
             {
                 TempData["Error"] = "Please enter some text.";
-                return RedirectToAction("Index");
+                return RedirectToAction("AddReflection");
             }
 
-            // Create a new Word document
-            WordDocument doc = new WordDocument();
+            var doc = new WordDocument();
 
-            // Apply reflection effect
-            TextStyle textStyle = new TextStyle
+            // Create paragraph for original text
+            var originalPara = new IronWord.Models.Paragraph();
+            originalPara.AddText(userText).Style = new TextStyle
             {
-                TextEffect = new TextEffect
-                {
-                    ReflectionEffect = new Reflection()
-                }
+                Color = new IronWord.Models.Color(0, 0, 0) // Black
             };
+            doc.AddParagraph(originalPara);
 
-            // Add user-entered text with reflection effect
-            doc.AddText(userText).Style = textStyle;
+            // Spacer
+            var spacer = new IronWord.Models.Paragraph();
+            spacer.AddText(" ");
+            doc.AddParagraph(spacer);
 
-            // Save the document to a temporary file
-            string tempPath = Path.Combine(Path.GetTempPath(), "reflectionEffect.docx");
-            doc.SaveAs(tempPath);
+            // Create reflection-style paragraph
+            var reflectionPara = new IronWord.Models.Paragraph();
+            reflectionPara.AddText(userText).Style = new TextStyle
+            {
+                Color = new IronWord.Models.Color(180, 180, 180) // Light gray
+            };
+            doc.AddParagraph(reflectionPara);
 
-            // Read and return file
-            byte[] fileBytes = System.IO.File.ReadAllBytes(tempPath);
-            return File(fileBytes, "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "reflectionEffect.docx");
+            // Save and return file
+            string filePath = Path.Combine(Path.GetTempPath(), "ReflectionEffect.docx");
+            doc.SaveAs(filePath);
+
+            byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+            System.IO.File.Delete(filePath);
+
+            return File(fileBytes,
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "ReflectionEffect.docx");
+        }
+
+        public IActionResult AddGradient()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult GenerateGradientWord(string inputText, string startColor, string endColor)
+        {
+            IronWord.License.LicenseKey = "IRONSUITE.EXCELSIORTECHNOLOGIES.8187-3708CDF60F-B3MFZGNEBBLCW6W5-BXTNM4MPHNMU-OTOEBFCLRDSW-ETTEAFOQHJNT-KBYQIADCMQPR-QVRLMSV47S2Q-GLWMCW-TRH25WCBAZKQUA-SANDBOX-BDIXLR.TRIAL.EXPIRES.27.MAR.2026";
+
+            if (string.IsNullOrWhiteSpace(inputText))
+                inputText = "Gradient Text Example";
+
+            // Convert HTML hex to RGB
+            var start = System.Drawing.ColorTranslator.FromHtml(startColor);
+            var end = System.Drawing.ColorTranslator.FromHtml(endColor);
+
+            WordDocument doc = new WordDocument();
+            IronWord.Models.Paragraph para = new IronWord.Models.Paragraph();
+
+            int len = inputText.Length;
+            for (int i = 0; i < len; i++)
+            {
+                float ratio = (float)i / Math.Max(1, len - 1);
+
+                byte r = (byte)(start.R + (end.R - start.R) * ratio);
+                byte g = (byte)(start.G + (end.G - start.G) * ratio);
+                byte b = (byte)(start.B + (end.B - start.B) * ratio);
+
+                IronWord.Models.Color interpolatedColor = new IronWord.Models.Color(r, g, b);
+
+                para.AddText(inputText[i].ToString()).Style = new TextStyle
+                {
+                    Color = interpolatedColor,
+                    //FontSize = 20,
+                    //Bold = true
+                };
+            }
+
+            doc.AddParagraph(para);
+
+            string filePath = Path.Combine(Path.GetTempPath(), "GradientText.docx");
+            doc.SaveAs(filePath);
+
+            byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+            System.IO.File.Delete(filePath);
+
+            return File(fileBytes,
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "GradientText.docx");
         }
 
     }

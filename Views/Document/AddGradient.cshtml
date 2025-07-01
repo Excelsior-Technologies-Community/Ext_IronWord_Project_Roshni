@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "AddGradient";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Enter Text and Download Word with Gradient Effect</h2>
+
+<form asp-action="GenerateGradientWord" method="post">
+    <div class="form-group">
+        <label>Enter Text:</label>
+        <input type="text" name="inputText" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Start Color:</label>
+        <input type="color" name="startColor" class="form-control" value="#ff0000" />
+    </div>
+
+    <div class="form-group">
+        <label>End Color:</label>
+        <input type="color" name="endColor" class="form-control" value="#0000ff" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Generate Word File</button>
+</form>
